@@ -1,70 +1,63 @@
-# ft_printf
-ft_printf - 42 School Project
-Overview
-ft_printf is a project from the 42 School curriculum that involves recreating a simplified version of the C standard library's printf function. This project aims to deepen understanding of variadic functions, string manipulation, and low-level formatting in C. The goal is to implement a custom ft_printf function that mimics the behavior of the original printf for specific format specifiers, handling various data types and formatting options.
-Project Description
-The ft_printf function is designed to parse a format string and handle various format specifiers, such as:
+# 42_ft_printf
+ft_printf – Project at 42 school (42 Wolfsburg)
 
-%c: Character
-%s: String
-%d/%i: Integer
-%u: Unsigned integer
-%x/%X: Hexadecimal (lowercase/uppercase)
-%p: Pointer address
-%%: Literal percent sign
+<h1 align="center">
+	🖨️ ft_printf
+</h1>
 
-Additional features may include handling flags, width, and precision (depending on the project requirements). The implementation uses variadic functions (va_list, va_arg, etc.) to process variable arguments and custom string manipulation to format output.
-Features
+<p align="center">
+	<b><i>Custom printf implementation in C</i></b><br>
+</p>
 
-Supports basic format specifiers as required by the 42 project guidelines.
-Handles variable arguments using the C standard library's variadic functions.
-Outputs formatted strings to the standard output (file descriptor 1).
-Adheres to 42 School's Norminette coding standards.
+<h3 align="center">
+	<a href="#-about-the-project">About</a>
+	<span> · </span>
+	<a href="#-usage">Usage</a>
+	<span> · </span>
+	<a href="#-what-i-learned">What I Learned</a>
+</h3>
 
-Getting Started
-Prerequisites
+---
 
-A C compiler (e.g., gcc or clang)
-make for using the provided Makefile
-Basic understanding of C programming and variadic functions
+## 💡 About the project
 
-Compilation
-To compile the project, run:
-make
+> _ft_printf is an individual project at 42 Wolfsburg focused on recreating the standard C `printf` function from scratch. The goal is to gain a deep understanding of variadic functions, string manipulation, and formatted output in C. This project is a key milestone in building robust, reusable, and efficient C code for future challenges at 42._
 
-This generates the ft_printf.a static library (or an executable if a main.c is provided). To clean up object files or the library, use:
-make clean
-make fclean
+For more detailed information, see the [**subject of this project**](https://github.com/jonona912/42_ft_printf/blob/master/ft_printf_subject.pdf).
 
-Usage
-To use ft_printf in your own project:
+## 🛠️ Usage
 
-Include the header file:
+### Requirements
+
+The project is written in C and requires the **`gcc` compiler** and standard **C libraries**.
+
+### Instructions
+
+**1. Compiling the library**
+
+To compile, navigate to the project directory and run:
+
+```shell
+$ make
+```
+
+**2. Using it in your code**
+
+To use `ft_printf` in your project, include its header:
+
+```c
 #include "ft_printf.h"
+```
 
+Then link the compiled library when compiling your code.
 
-Link the ft_printf.a library during compilation.
+## 📚 What I Learned
+- This project reinforced the importance of thoroughly understanding requirements and specifications prior to beginning development. I learned firsthand that adding new features without sufficient initial planning can introduce significant complexity and challenges that otherwise were avoidable.
+- Variadic functions in C (`stdarg.h`)
+- Handling and parsing format strings
+- Custom implementation of formatted output
+- Robust error handling and debugging
 
-Call the function like the standard printf:
-ft_printf("Hello, %s! You are %d years old.\n", "Alice", 25);
+---
 
-
-
-For testing, you can compile with the provided main.c (if included):
-gcc main.c src/ft_printf.c -Iinclude
-./a.out
-
-Learning Outcomes
-Through this project, I have gained experience in:
-
-Implementing variadic functions in C
-Parsing and processing format strings
-Managing string manipulation and memory efficiently
-Debugging complex string output issues
-Most importantly improved my problem solving skills
-
-Notes
-
-The implementation is designed to be efficient and robust, handling edge cases as specified in the project guidelines.
-The code has been tested against the 42 School's evaluation criteria (e.g., Moulinette or custom testers like printfTester).
-Feel free to explore the source code to understand the implementation details!
+Let me know if you want to add more sections or further personalize the README!
