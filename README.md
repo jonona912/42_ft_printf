@@ -1,6 +1,3 @@
-# 42_ft_printf
-ft_printf – Project at 42 school (42 Wolfsburg)
-
 <h1 align="center">
 	🖨️ ft_printf
 </h1>
