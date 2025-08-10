@@ -12,7 +12,7 @@ ft_printf – Project at 42 school (42 Wolfsburg)
 <h3 align="center">
 	<a href="#-about-the-project">About</a>
 	<span> · </span>
-	<a href="#-usage">Usage</a>
+	<a href="#%EF%B8%8F-usage">Usage</a>
 	<span> · </span>
 	<a href="#-what-i-learned">What I Learned</a>
 </h3>
